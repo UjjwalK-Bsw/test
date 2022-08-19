@@ -1,0 +1,7 @@
+# [START cloudbuild_npm_node]
+steps:
+# Install dependencies
+- name: node
+  entrypoint: npm
+  args: ['install']
+

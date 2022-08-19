@@ -4,7 +4,7 @@
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "start": "npm run shell",
+    "start": "node .",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
@@ -13,11 +13,23 @@
   },
   "main": "index.js",
   "dependencies": {
+    "express": "^4.18.1",
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^3.18.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.2.0"
   },
-  "private": true
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujjwalGames/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ujjwalGames/test/issues"
+  },
+  "homepage": "https://github.com/ujjwalGames/test#readme"
 }
