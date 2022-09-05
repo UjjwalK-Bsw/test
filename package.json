@@ -2,11 +2,7 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "node test.js", 
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "start": "node test.js"
   },
   "engines": {
     "node": "16"
