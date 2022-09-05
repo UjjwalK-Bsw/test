@@ -1,10 +1,7 @@
+# [START cloudbuild_npm_node]
 steps:
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - functions
-  - deploy
-  - test
-  - --source=.
-  - --trigger-http
-  - --runtime=nodejs16
-  - --allow-unauthenticated
+# Install dependencies
+- name: node
+  entrypoint: npm
+  args: ['install']
+
